@@ -1,0 +1,17 @@
+https://www.free-css.com/assets/files/free-css-templates/download/page292/picstudio.zip
+
+http://3.110.173.74/
+
+steps to deploy the zip directory in EC2 instance (Linux OS)=>
+
+1) mkdir temp
+2) ls -lrt
+3) cd temp/
+4) wget https://www.free-css.com/assets/files/free-css-templates/download/page292/picstudio.zip
+5) ls -lrt
+6) unzip picstudio.zip
+7) ls -lrt
+8) mv * /var/www/html/
+9) systemctl enable httpd
+10) cd /var/www/html/    .........(cpy directory name and html file name from here. Create link like IP address/directoryname/html_fil_ename)
+11) http://3.110.173.74/picstudio-html/index.html
